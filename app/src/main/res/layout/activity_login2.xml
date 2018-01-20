@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/loginParent"
+    android:orientation="vertical"
+    tools:context="com.example.mayank.rooms.Front.login_fragment">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginBottom="8dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+
+    <RelativeLayout
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:background="@drawable/round_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_view"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="100dp"
+            >
+
+            <EditText
+                android:id="@+id/pNumber"
+                android:maxLength="10"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:inputType="number"
+                android:gravity="center"
+                android:hint="Enter your number"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_view"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="177dp"
+            android:id="@+id/login"
+            >
+
+            <EditText
+                android:id="@+id/cnumber"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:hint="Enter your child number"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_margin="5dp"
+            android:text="Login"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="24dp"
+            android:background="@drawable/button_view"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

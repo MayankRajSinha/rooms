@@ -1,0 +1,65 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/register_parent"
+    tools:context="com.example.mayank.rooms.Front.login_fragment">
+
+    <RelativeLayout
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:background="@drawable/round_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="92dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/edittext_view"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/textInputLayout2">
+
+
+            <EditText
+                android:id="@+id/entryCode"
+                android:hint="Enter Code"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:textColor="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:text="Call 8080808000 for entry code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textInputLayout2"
+            android:layout_alignStart="@+id/button"
+            android:layout_marginTop="68dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_margin="5dp"
+            android:text="Proceed"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="24dp"
+            android:background="@drawable/button_view"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </RelativeLayout>
+
+</FrameLayout>

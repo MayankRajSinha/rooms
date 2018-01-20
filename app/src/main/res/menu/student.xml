@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/profile"
+        android:title="Profile" />
+
+
+    <item android:id="@+id/help"
+        android:title="Help" />
+
+    <item
+        android:id="@+id/call"
+        android:title="Call Counsellor"
+        />
+    <item android:id="@+id/achievements"
+        android:title="Achievements" />
+
+    <item
+        android:id="@+id/motivational"
+        android:title="Motivational"
+        />
+
+    <item
+        android:id="@+id/iMessage"
+        android:title="Institute Message"
+        />
+
+    <item
+        android:id="@+id/stu_signout"
+        android:title="Log out"
+        />
+</menu>

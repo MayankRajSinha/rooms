@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mayank.rooms">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Front.Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Front.register_activity" />
+        <activity android:name=".House_owner.owner_activity" />
+        <activity android:name=".House_owner.addRoomActivity" />
+        <activity android:name=".Student.student_activity" />
+        <activity android:name=".Student.stu_details" />
+        <activity android:name=".Student.MotivationalActivity" />
+        <activity
+            android:name=".Student.OnClickMotivationalActivity"
+            android:label="@string/title_activity_on_click_motivational"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Student.InstituteMessageActivity" />
+        <activity android:name=".Student.SearchResultsActivity" />
+        <activity android:name=".Student.OnClickSearchResults" />
+        <activity android:name=".Student.AchievementsActivity" />
+        <activity android:name=".Parent.LoginActivity" />
+        <activity android:name=".Parent.ParentsMainActivity" />
+        <activity android:name=".Police.LoginActivity" />
+        <activity android:name=".Police.SearchStressedStudent" />
+        <activity android:name=".Police.searchResultsActivity" />
+        <activity android:name=".Counsellor.LoginActivity" />
+        <activity android:name=".Institute.LoginActivity" />
+        <activity android:name=".Institute.insActivity" />
+        <activity android:name=".Counsellor.selectStudentActivity" />
+        <activity android:name=".Counsellor.studentDetails" />
+        <activity android:name=".Counsellor.ReviewActivity"></activity>
+    </application>
+
+</manifest>

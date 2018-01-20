@@ -1,0 +1,99 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/loginParent"
+    tools:context="com.example.mayank.rooms.Front.login_fragment">
+
+   <RelativeLayout
+       android:layout_margin="5dp"
+       android:orientation="vertical"
+       android:background="@drawable/round_view"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <android.support.design.widget.TextInputLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@drawable/edittext_view"
+           android:layout_marginEnd="15dp"
+           android:layout_marginStart="15dp"
+           android:layout_marginTop="100dp"
+           >
+
+           <EditText
+               android:id="@+id/loginNumber"
+               android:maxLength="10"
+               android:textColor="#000000"
+               android:textSize="20sp"
+               android:inputType="number"
+               android:gravity="center"
+               android:hint="Enter number"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent" />
+       </android.support.design.widget.TextInputLayout>
+
+       <android.support.design.widget.TextInputLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@drawable/edittext_view"
+           android:layout_marginEnd="15dp"
+           android:layout_marginStart="15dp"
+           android:layout_marginTop="177dp"
+           android:id="@+id/login"
+           >
+
+           <EditText
+               android:id="@+id/loginPassword"
+               android:textColor="#000000"
+               android:textSize="20sp"
+               android:gravity="center"
+               android:hint="Enter Password"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent" />
+       </android.support.design.widget.TextInputLayout>
+
+
+       <TextView
+           android:textSize="18sp"
+           android:textStyle="bold|italic"
+           android:gravity="center"
+           android:text="Login As :"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/login"
+           android:layout_alignParentStart="true"
+           android:layout_marginTop="18dp"
+           android:id="@+id/textView" />
+
+
+       <Spinner
+           android:layout_margin="15dp"
+           android:id="@+id/institute"
+           android:gravity="center"
+           android:textAlignment="center"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="21dp"
+           android:entries="@array/spinnerItems"
+           android:layout_below="@+id/textView"
+           android:layout_alignParentStart="true">
+
+       </Spinner>
+
+       <Button
+           android:id="@+id/loginButton"
+           android:layout_margin="5dp"
+           android:text="Login"
+           android:textColor="#000"
+           android:textStyle="bold"
+           android:textSize="24dp"
+           android:background="@drawable/button_view"
+           android:layout_alignParentEnd="true"
+           android:layout_alignParentBottom="true"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           />
+   </RelativeLayout>
+
+</FrameLayout>
